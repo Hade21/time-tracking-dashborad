@@ -1,80 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Time tracking dashboard</title>
+    <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+        
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
 </head>
+
 <body>
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <section>
+        <div class="container">
+            <div class="profile-card">
+                <div class="profile">
+                    <img src="./images/image-jeremy.png" alt="image-jeremy" class="image-jeremy">
+                    <p class="text">Report for</p>
+                    <h1 class="name">Jeremy Robson</h1>
+                </div>
+                <p class="time">Daily</p>
+                <p class="time">Weekly</p>
+                <p class="time">Monthly</p>
+            </div>
+            <div class="work card">
+                <img src="./images/icon-work.svg" alt="" class="img work">
+                <div class="detail">
+                    <p class="card-title"><span>Work</span><span><i class="fas fa-ellipsis-h"></i></span></p>
+                    <p class="current-work">52hrs</p>
+                    <p class="previous-work">Last week - 36hrs</p>
+                </div>
+            </div>
+            <div class="play card">
+                <img src="./images/icon-play.svg" alt="" class="img play">
+                <div class="detail">
+                    <p class="card-title"><span>Play</span><span><i class="fas fa-ellipsis-h"></i></span></p>
+                    <p class="current-play">52hrs</p>
+                    <p class="previous-play">Last week - 36hrs</p>
+                </div>
+            </div>
+            <div class="study card">
+                <img src="./images/icon-study.svg" alt="" class="img study">
+                <div class="detail">
+                    <p class="card-title"><span>Study</span><span><i class="fas fa-ellipsis-h"></i></span></p>
+                    <p class="current-study">52hrs</p>
+                    <p class="previous-study">Last week - 36hrs</p>
+                </div>
+            </div>
+            <div class="excercise card">
+                <img src="./images/icon-excercise.svg" alt="" class="img excercise">
+                <div class="detail">
+                    <p class="card-title"><span>Excercise</span><span><i class="fas fa-ellipsis-h"></i></span></p>
+                    <p class="current-excercise">52hrs</p>
+                    <p class="previous-excercise">Last week - 36hrs</p>
+                </div>
+            </div>
+            <div class="social card">
+                <img src="./images/icon-social.svg" alt="" class="img-social">
+                <div class="detail">
+                    <p class="card-title"><span>Social</span><span><i class="fas fa-ellipsis-h"></i></span></p>
+                    <p class="current-social">52hrs</p>
+                    <p class="previous-social">Last week - 36hrs</p>
+                </div>
+            </div>
+            <div class="self-care card">
+                <img src="./images/icon-self-care.svg" alt="" class="img-self-care">
+                <div class="detail">
+                    <p class="card-title"><span>Self Care</span><span><i class="fas fa-ellipsis-h"></i></span></p>
+                    <p class="current-self-care">52hrs</p>
+                    <p class="previous-self-care">Last week - 36hrs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://frontendmentor.io/profile/hade21">Rohman</a>.
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
