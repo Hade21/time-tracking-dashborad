@@ -164,9 +164,8 @@ body {
     }
     .profile {
         display: flex;
-        justify-content: ;
+        justify-content: flex-start;
         padding: 20px;
-        height: ;
     }
     .image-jeremy {
         width: 100%;
